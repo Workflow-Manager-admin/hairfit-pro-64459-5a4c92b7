@@ -7,15 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 
-// Simple placeholder for Routine page
-function Routine() {
-  return (
-    <div style={{ paddingTop: '120px', textAlign: 'center' }}>
-      <h2 style={{ color: "#4A90E2" }}>Your Routine</h2>
-      <p>This is where your personalized hair routine will appear.</p>
-    </div>
-  );
-}
+import RoutinePlanner from './RoutinePlanner';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -36,7 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/profile" element={<ProfileQuiz />} />
-            <Route path="/routine" element={<Routine />} />
+            <Route path="/routine" element={<RoutinePlanner />} />
           </Routes>
         </main>
       </div>
