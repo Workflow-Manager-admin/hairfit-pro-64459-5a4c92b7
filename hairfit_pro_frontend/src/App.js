@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import RoutinePlanner from './RoutinePlanner';
-
+import Journal from './Journal';
 // PUBLIC_INTERFACE
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/profile" element={<ProfileQuiz />} />
             <Route path="/routine" element={<RoutinePlanner />} />
+            <Route path="/journal" element={<Journal />} />
           </Routes>
         </main>
       </div>
