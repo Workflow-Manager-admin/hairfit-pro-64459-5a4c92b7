@@ -7,11 +7,12 @@ import {
   Route,
 } from "react-router-dom";
 
+// PUBLIC_INTERFACE
 import RoutinePlanner from './RoutinePlanner';
 import Journal from './Journal';
 import Blog from './Blog';
 import BlogDetail from './BlogDetail';
-
+import CommunityQA from './CommunityQA';
 // PUBLIC_INTERFACE
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="/journal" element={<Journal />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
+            <Route path="/community" element={<CommunityQA />} />
           </Routes>
         </main>
       </div>
