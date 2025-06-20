@@ -9,6 +9,9 @@ import {
 
 import RoutinePlanner from './RoutinePlanner';
 import Journal from './Journal';
+import Blog from './Blog';
+import BlogDetail from './BlogDetail';
+
 // PUBLIC_INTERFACE
 function App() {
   return (
@@ -30,6 +33,8 @@ function App() {
             <Route path="/profile" element={<ProfileQuiz />} />
             <Route path="/routine" element={<RoutinePlanner />} />
             <Route path="/journal" element={<Journal />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
           </Routes>
         </main>
       </div>
