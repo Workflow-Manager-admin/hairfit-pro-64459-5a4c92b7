@@ -13,6 +13,7 @@ import Journal from './Journal';
 import Blog from './Blog';
 import BlogDetail from './BlogDetail';
 import CommunityQA from './CommunityQA';
+import AboutAndContact from './AboutAndContact';
 // PUBLIC_INTERFACE
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/community" element={<CommunityQA />} />
+            <Route path="/about" element={<AboutAndContact />} />
           </Routes>
         </main>
       </div>
