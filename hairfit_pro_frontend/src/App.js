@@ -1,19 +1,18 @@
 import React from 'react';
-import './App.css';
 import Homepage from './Homepage';
-
+import ProfileQuiz from './ProfileQuiz';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
 
-function Profile() {
-  // Placeholder for Profile page
+// Simple placeholder for Routine page
+function Routine() {
   return (
     <div style={{ paddingTop: '120px', textAlign: 'center' }}>
-      <h2 style={{ color: "#4A90E2" }}>Profile Page</h2>
-      <p>This is where users find their hair type.</p>
+      <h2 style={{ color: "#4A90E2" }}>Your Routine</h2>
+      <p>This is where your personalized hair routine will appear.</p>
     </div>
   );
 }
@@ -36,7 +35,8 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/profile" element={<ProfileQuiz />} />
+            <Route path="/routine" element={<Routine />} />
           </Routes>
         </main>
       </div>
